@@ -36,15 +36,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     public VentanaPrincipal() {
         
         initComponents();
-        ventanaCliente=new VentanaCliente();
-        listarTicket=new VentanaListarTicket();
-        
-        localizacion = Locale.getDefault();
-        
-        mensajes = ResourceBundle.getBundle("ec.edu.ups.idioma.mensajes", localizacion);
-        
-        cambiarIdioma();
-        
+        ventanaCliente = new VentanaCliente();
+        listarTicket = new VentanaListarTicket(); 
     }
     
     public void cambiarIdioma(){
@@ -63,7 +56,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         ventanaCliente.getBtnCerrar().setText(mensajes.getString("btnCerrar"));
         ventanaCliente.getBtnIngresarVehiculo().setText(mensajes.getString("btnIngresarVehiculo"));
         ventanaCliente.getPnlCliente().setBorder(javax.swing.BorderFactory.createTitledBorder(null, mensajes.getString("pnlCliente"), javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 3, 14), new java.awt.Color(51, 0, 51)));
-        
+        ventanaCliente.getV().getLbMarca().setText(mensajes.getString("lbMarca"));
+        ventanaCliente.getV().getLbModelo().setText(mensajes.getString("lbModelo"));
+        ventanaCliente.getV().getLbPLaca().setText(mensajes.getString("lbPlaca"));
+        ventanaCliente.getV().getPnlVehiculo().setBorder(javax.swing.BorderFactory.createTitledBorder(null, mensajes.getString("pnlVehiculo"), javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 3, 14)));
     }
 
     /**

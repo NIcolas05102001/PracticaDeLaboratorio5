@@ -30,8 +30,18 @@ public class VentanaCliente extends javax.swing.JInternalFrame {
 
     public VentanaCliente() {
         initComponents();
+        v = new VentanaVehiculo();
         cCliente = new ControladorCliente(this, new ClienteDAO());
         cVehiculo = new ControladorVehiculo(this, new VehiculoDAO());
+        
+    }
+
+    public VentanaVehiculo getV() {
+        return v;
+    }
+
+    public void setV(VentanaVehiculo v) {
+        this.v = v;
     }
 
     public JButton getBtnCerrar() {
@@ -72,6 +82,7 @@ public class VentanaCliente extends javax.swing.JInternalFrame {
 
     public void setLbNombre(JLabel lbNombre) {
         this.lbNombre = lbNombre;
+        
     }
 
     public JLabel getLbTelefono() {

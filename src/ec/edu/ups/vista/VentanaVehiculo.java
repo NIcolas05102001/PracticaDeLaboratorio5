@@ -5,6 +5,10 @@
  */
 package ec.edu.ups.vista;
 
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
 /**
  *
  * @author Usuario
@@ -21,6 +25,48 @@ public class VentanaVehiculo extends javax.swing.JFrame {
     public VentanaVehiculo() {
         initComponents();
     }
+
+    public JButton getBtnIngresarTicket() {
+        return btnIngresarTicket;
+    }
+
+    public void setBtnIngresarTicket(JButton btnIngresarTicket) {
+        this.btnIngresarTicket = btnIngresarTicket;
+    }
+
+    public JLabel getLbMarca() {
+        return lbMarca;
+    }
+
+    public void setLbMarca(JLabel lbMarca) {
+        this.lbMarca = lbMarca;
+    }
+
+    public JLabel getLbModelo() {
+        return lbModelo;
+    }
+
+    public void setLbModelo(JLabel lbModelo) {
+        this.lbModelo = lbModelo;
+    }
+
+    public JLabel getLbPLaca() {
+        return lbPLaca;
+    }
+
+    public void setLbPLaca(JLabel lbPLaca) {
+        this.lbPLaca = lbPLaca;
+    }
+
+    public JPanel getPnlVehiculo() {
+        return pnlVehiculo;
+    }
+
+    public void setPnlVehiculo(JPanel pnlVehiculo) {
+        this.pnlVehiculo = pnlVehiculo;
+    }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
